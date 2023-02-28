@@ -29,25 +29,28 @@ a{
 .header-title{
     color: #373B61;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 .clg-logo {
+    margin-top: 2em;
     width: 35%;
     height: 35%;
-    display: none;
+    display: block;
 }
 .globe-gif{
-    display: none;
+    display: block;
     position: absolute;
-    top: 2%;
-    width: 10%;
-    left: 10%;
+    top: 3%;
+    width: 8%;
+    left: 43%;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2em;
     min-height: 70px;
 }
 .nav-menu{
@@ -178,4 +181,26 @@ main{
 }
 .fa-square-facebook{
     color: #133192;
+}
+/* @Media Query for desktop */
+@media screen and (min-width:768px) {
+    .header-title{
+        flex-direction: row;
+    }
+    .clg-logo{
+        width: 20%;
+    }
+    .globe-gif{
+        left: 6%;
+        width: 4%;
+        top: 4.5%;
+    }
+    .card img{
+        width: 10%;
+    }
+    .title{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
 }
